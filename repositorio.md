@@ -19,7 +19,7 @@ os usuários vão poder classificar o filmes clicando em estrelas.
 - o site deve ter filtros de gêneros, e filmes marcados como assistido não deve aparecer na lista de novas sugestões.
 - as buscas deve ser dinamica, na barra de busca deve aparcer as sugestões ao digitar.
 - todas as paginas de filmes deve aparecer a classificação indicativa, a sinopse e a capa, se não tiver a capa no imdb procurar pelo nome do filme e o diretor para encontra-la
-- a cores usadas para o projeto deve ter as cores na estetica do material de divulgação do filme Agente Secreto de 2025, estilo anos 70 https://upload.wikimedia.org/wikipedia/pt/6/60/O_Agente_Secreto_%28Cartaz_brasileiro%29.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original
+- a cores usadas para o projeto deve ter as cores na estetica do material de divulgação do filme Agente Secreto de 2025, estilo anos 70 e que a estetica fique entre cidade de Deus. https://upload.wikimedia.org/wikipedia/pt/6/60/O_Agente_Secreto_%28Cartaz_brasileiro%29.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original
 
 ##### Regras Globais
 - Use sempre PDO para conexão e queries no MySQL para evitar SQL Injections
