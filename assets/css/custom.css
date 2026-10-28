@@ -1,0 +1,149 @@
+/* Cine Palácio - Estética 1970s: O Agente Secreto & Cidade de Deus */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:wght@600;900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:ital,wght@0,700;0,900;1,600&display=swap');
+
+:root {
+    --cine-bg: #120d09;
+    --cine-card: #1c140e;
+    --cine-card-hover: #261b13;
+    --cine-border: #3d291a;
+    --cine-amber: #e5a93c;
+    --cine-amber-light: #fcd34d;
+    --cine-amber-dark: #b45309;
+    --cine-terracotta: #8a2524;
+    --cine-terracotta-dark: #5a1211;
+    --cine-parchment: #fde68a;
+    --cine-cream: #faf5ea;
+    --cine-muted: #a39587;
+}
+
+body {
+    background-color: var(--cine-bg);
+    color: var(--cine-cream);
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-image: 
+        radial-gradient(circle at 50% 0%, rgba(180, 83, 9, 0.15) 0%, transparent 65%),
+        radial-gradient(circle at 100% 100%, rgba(138, 37, 36, 0.12) 0%, transparent 60%);
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* Tipografias Temáticas */
+.font-poster {
+    font-family: 'Anton', 'Impact', sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.font-serif-vintage {
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-cinzel {
+    font-family: 'Cinzel', serif;
+}
+
+/* Efeito de Bilhete / Letreiro Retrô */
+.marquee-border {
+    border: 2px dashed var(--cine-amber);
+    box-shadow: 0 0 15px rgba(229, 169, 60, 0.15);
+}
+
+.glow-amber {
+    box-shadow: 0 4px 20px -2px rgba(229, 169, 60, 0.25);
+}
+
+.glow-terracotta {
+    box-shadow: 0 4px 20px -2px rgba(138, 37, 36, 0.35);
+}
+
+/* Selos Oficiais de Classificação Indicativa do Brasil */
+.badge-classificacao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 900;
+    font-family: 'DM Sans', sans-serif;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    line-height: 1;
+}
+
+.badge-classificacao.large {
+    width: 34px;
+    height: 34px;
+    font-size: 15px;
+    border-radius: 6px;
+}
+
+.badge-classificacao.cl-Livre,
+.badge-classificacao.cl-L {
+    background-color: #00a859;
+}
+
+.badge-classificacao.cl-10 {
+    background-color: #0095da;
+}
+
+.badge-classificacao.cl-12 {
+    background-color: #ffcc00;
+    color: #111111;
+}
+
+.badge-classificacao.cl-14 {
+    background-color: #f58220;
+}
+
+.badge-classificacao.cl-16 {
+    background-color: #ee1c24;
+}
+
+.badge-classificacao.cl-18 {
+    background-color: #000000;
+    border: 1px solid #444444;
+}
+
+/* Interação com Estrelas de Avaliação */
+.star-rating {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    direction: ltr;
+}
+
+.star-rating .star-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #524336;
+    transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.star-rating .star-btn:hover,
+.star-rating .star-btn.active {
+    color: var(--cine-amber);
+}
+
+.star-rating .star-btn:hover {
+    transform: scale(1.2);
+}
+
+/* Scrollbar Personalizado Retrô */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #140e09;
+}
+::-webkit-scrollbar-thumb {
+    background: #3d291a;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--cine-amber-dark);
+}
